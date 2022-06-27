@@ -1,7 +1,9 @@
 <template>
   <div class="container">
-    <h1>{{ heading }}</h1>
-    <button @mouseover="heading = 'Hi!'">Change</button>
+    <form>
+      <h1>{{ heading }}</h1>
+      <button @click.prevent="heading = 'Hi!'">Change</button>
+    </form>
   </div>
 </template>
 
